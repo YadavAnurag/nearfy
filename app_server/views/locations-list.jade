@@ -1,0 +1,30 @@
+extends layout
+mixin welcome
+    p welcome
+block content
+  #banner.page-header
+    .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12.pt-5
+            h1= pageHeader.title
+            p !{pageHeader.strapline}
+    .row
+        .col-lg-8.col-md-8.col-sm-12.col-xs-12
+            each location in locations
+                .card.mt-5.mb-3
+                    .card-body.text-white
+                        h4  
+                            a(href="/location").text-white= location.name
+                            p.rating.d-inline
+                                &nbsp;
+                                - for(var i = 1; i<=location.rating; i++)
+                                    i.fa.fa-star.text-white &nbsp;
+                                - for(i=location.rating;i<5; i++)
+                                    i.far.fa-star.text-white &nbsp;
+                            span.badge.badge-primary= location.distance    
+                        p.address.text-white= location.address
+                    .card-footer.text-white
+                        each facility in location.facilities
+                            span.label.label-warning= facility
+                            ,&nbsp;
+        .col-lg-4.col-md-4.col-sm-12.col-xs-12
+            p.mt-5.p-1.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odit incidunt, quisquam necessitatibus voluptas tempore illo laudantium ducimus vel, iure nulla obcaecati earum consectetur soluta reprehenderit quae inventore? Cupiditate, quibusdam.

@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  #banner.page-header
+    .row.pt-5
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            h1 darkMoon
+            
+    .row.mt-5
+        .col-lg-6.col-md-8.col-sm-12.col-xs-12
+            .card.text-white.mb-4
+                .card-header
+                    h5 Opening Hours
+                .card-body
+                    p Monday 5:00pm - 9:00pm
+                    p Friday 9:00am - 12:00pm
+            .card.text-white.mb-4
+                .card-header
+                    h5 Facilities
+                .card-body 
+                    span Hot drinks &nbsp;
+                    span.label.label-warning Food &nbsp;
+                    span.label.label-warning Premium Wifi
+        .col-lg-6.col-md-8.col-sm-12.col-xs-12
+            .card.text-white
+                .card-header
+                    h5 Location
+                .card-body.map
+                    .img.img-fluid 
+                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.463489376063!2d83.43779591463162!3d26.729581683206746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39915ca318ca3bc3%3A0x6ea79465ed0b904!2sTagore+Hostel!5e0!3m2!1sen!2sin!4v1528018987057", width="100%", height="100%", frameborder="0", style="border:0", allowfullscreen)
+    .row.mt-5
+        .col-lg-8.col-md-8.col-sm-12.col-xs-12
+            .card.text-white
+                .card-header.text-white
+                    .text-right.d-block
+                        a(href="location/review/new")
+                            button(type='button').btn.btn-primary Add Review
+                .card-body
+                    h5.d-inline  Amit Kumar Tiwari &nbsp;
+                    p.rating.d-inline
+                        i.fa.fa-star.text-white &nbsp;
+                        i.fa.fa-star.text-white &nbsp;
+                        i.fa.fa-star-half.text-white &nbsp;
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id recusand
+                .card-body
+                    h5.d-inline  Amit Kumar Tiwari &nbsp;
+                    p.rating.d-inline
+                        i.fa.fa-star.text-white &nbsp;
+                        i.fa.fa-star.text-white &nbsp;
+                        i.fa.fa-star-half.text-white &nbsp;
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id recusand

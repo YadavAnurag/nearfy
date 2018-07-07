@@ -1,0 +1,39 @@
+body{
+  color: indigo;
+}
+nav{
+  background-color: indigo;
+}
+nav > a{
+  color: white;
+}
+.list{
+  list-style-type: none;
+}
+.bc{
+  
+}
+footer{
+  background-color: indigo;
+} 
+.card{
+  background-color: indigo;
+}
+p.address{
+  color: indigo;
+}
+p.address p.rating{
+  color: indigo;
+}
+.card-body.map
+{
+ padding: 0px;  
+}
+.frm{
+  background-color: indigo;
+  color: white;
+  border-radius: 6px;
+}
+p.about{
+  font-size: 1.4rem;
+}

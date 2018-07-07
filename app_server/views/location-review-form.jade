@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  #banner.page-header
+    .row.pt-5
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            h1 Review darkMoon
+            
+    .row.mt-5
+        .col-lg-6.col-md-8.col-sm-12.col-xs-12
+            .container.mt-5.frm.pt-5.pb-5
+                h4 Rate this
+                .form(action='/location', method='get', role='form')
+                    .form-group
+                        input(type="text", placeholder='Enter your name').form-control
+                    .form-group
+                        select(name="").form-control
+                            option(value="") Rating
+                            option(value="") 1
+                            option(value="") 2
+                            option(value="") 3
+                            option(value="") 4
+                            option(value="") 5
+                    .form-group
+                        textarea(name="", cols="30", rows="5", placeholder='Write your review here').form-control
+                    .text-right
+                        button(type="submit").btn.btn-primary Add Review
+            
