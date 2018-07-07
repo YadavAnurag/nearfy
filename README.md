@@ -1,0 +1,2 @@
+# nearfy
+Nodejs Wifi Locator
